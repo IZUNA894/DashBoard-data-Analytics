@@ -1,0 +1,24 @@
+.logo {
+  font-family: "karla", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #505458;
+  margin: 10px 0;
+}
+.cLink {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.cBtn {
+  border: none;
+  color: #171515 !important;
+  background-color: #ffffff !important;
+  border-radius: 2px;
+  padding: 6px 14px;
+  line-height: 20px;
+}
+.cBtnActive {
+  background-color: #e4e7ea !important;
+}
