@@ -6,9 +6,30 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #ebeff2;
+  color: #505458 !important;
+  font-family: "Karla", sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h3 {
+  font-size: 24px;
+}
+p {
+  font-size: 14px;
+}
+h4 {
+  font-size: 18px;
+  margin: 10px 0 10px 0;
+  line-height: 22px;
+}
+h5 {
+  font-size: 15px;
+  margin: 10px 0 10px 0;
+  line-height: 16.5px;
+}
+.Dropdown-control {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+.Dropdown-option {
+  color: red;
+  padding: 3px 5px !important;
 }

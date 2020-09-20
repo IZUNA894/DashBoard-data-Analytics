@@ -14,13 +14,11 @@ export default class yearSlider extends Component {
     this.setYearValues = this.props.setYearValues;
   }
   handleChange = (e) => {
-    console.log(e);
     let choice = this.state.checked;
+    if (choice === true) this.props.setYearValues(2016, 2200);
     this.setState({ checked: !choice });
   };
-  handleRangeChange = (e) => {
-    console.log(e);
-  };
+  handleRangeChange = (e) => {};
 
   componentDidMount() {}
   render() {
@@ -52,16 +50,18 @@ export default class yearSlider extends Component {
       Content = "";
     }
     return (
-      <div className="card">
+      <div className="card" style={{ marginTop: "10px", marginBottom: "10px" }}>
         <div className="card-body">
-          <label>
+          <div style={{ justifyContent: "space-between", display: "flex" }}>
             <span>Year range</span>
-            <Switch
-              onChange={this.handleChange}
-              checked={this.state.checked}
-              className="react-switch"
-            />
-          </label>
+            <span>
+              <Switch
+                onChange={this.handleChange}
+                checked={this.state.checked}
+                className="react-switch"
+              />
+            </span>
+          </div>
 
           {Content}
         </div>

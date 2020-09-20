@@ -12,7 +12,6 @@ class App extends React.Component {
 
   onDragOver = (e) => {
     e.preventDefault();
-    console.log(this.state);
   };
 
   onDragStart = (e) => {

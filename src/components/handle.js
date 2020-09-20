@@ -17,11 +17,12 @@ export class Handle {
       "px";
 
     this.slider.container.appendChild(this.handle);
-
+    let val = 0;
     if (this.slider.displayValue) {
       this.valueContainer = document.createElement("div");
       this.valueContainer.classList.add("value");
-      this.valueContainer.innerHTML = this.position - this.slider.range.min;
+      val = this.position - this.slider.range.min;
+      this.valueContainer.innerHTML = this.position;
       this.handle.appendChild(this.valueContainer);
     }
     this.handle.addEventListener("mousedown", (e) => this.onMouseDown(e));
@@ -78,7 +79,7 @@ export class Handle {
       let value = parseInt(this.handle.style.left) / this.slider.pixelsPerUnit;
 
       if (value < 0) {
-        value = 0;
+        value = 2016;
       }
 
       if (value > this.slider.range.max) {
@@ -98,7 +99,6 @@ export class Handle {
   }
 
   giveValue() {
-    console.log(this.value);
     return this.value;
   }
   //   render() {

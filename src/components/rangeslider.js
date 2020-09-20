@@ -12,8 +12,8 @@ export class RangeSlider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lower: 2018,
-      upper: 2060,
+      lower: 2016,
+      upper: 2200,
     };
     // Get container
     let options = this.props;
