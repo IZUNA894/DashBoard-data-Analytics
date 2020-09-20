@@ -2,6 +2,7 @@
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://izuna894.github.io/DashBoard-data-Analytics/",
   "dependencies": {
     "@material-ui/core": "^5.0.0-alpha.7",
     "@material-ui/icons": "^4.9.1",
